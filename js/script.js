@@ -9,12 +9,12 @@
  * This function converts Fahrenheit to Celsius.
  */
 function calculateCelsius () {
-  // input
+  // get fahrenheit from user
   let fahrenheit = parseFloat(document.getElementById('fahrenheit').value);
 
-  // process
+  // calculate celsius
   let celsius = (fahrenheit - 32) * 5.0/9.0;
 
-  // output
+  // display celsius to user
   document.getElementById('celsius').innerHTML = "A temperature of " + fahrenheit + " °F is " + celsius.toFixed(1) + " °C."
 }
